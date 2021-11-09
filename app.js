@@ -33,6 +33,11 @@
 //or prod releases, etc. It also has a mechanism to lock the tree but 
 //generally will regenerate if package.json changes.
 
+//Async callbacks are functions that are specified as arguments when calling a function 
+//which will start executing code in the background. When the background code finishes running,
+// it calls the callback function to let you know the work is done, 
+//or to let you know that something of interest has happened   // This is asynchoronous javascript, whole-process is called event loop
+
 
 console.log("hello world");
 console.log("nodemon is running and changing it live by restarting, nodemon automatically do it");
