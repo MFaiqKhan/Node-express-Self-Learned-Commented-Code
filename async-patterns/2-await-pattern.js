@@ -38,10 +38,15 @@ getText("./content/first.txt")
 
 const start = async () => {
   try {
-    /*    const first = await getText("./content/first.txt")
-        const second = await getText("./content/second.txt") */
+    /*    const first = await getText("./content/first.txt") //so here we are getting only readfile but for the write we will have to make another
+        const second = await getText("./content/second.txt") */ //gettext like function, so we will use util module as it keeps the syntax minimum and not req us to create function
   /*   const first = await readFilePromise("./content/first.txt",'utf8');   //this is when we use util
-    const second = await readFilePromise("./content/second.txt",'utf-8'); */
+    const second = await readFilePromise("./content/second.txt",'utf-8'); 
+      await writeFilePromise(
+      './content/result-mind-grenade.txt',
+      `THIS IS AWESOME : ${first} ${second}`,
+      { flag: 'a' }
+    ) */
     const first = await readFile('./content/first.txt', 'utf8')  //now we can use directly by just adding .promises to require('fs')
     const second = await readFile('./content/second.txt', 'utf8')
     await writeFile(
