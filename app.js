@@ -15,7 +15,7 @@
 //but we clone it in different pc that doesn't have modules for the project, so then we only run
 //npm install, command and it installs every dependencies written in package.json, so that's why .json is important
 
-//we will install nodemon as a devDependicy by ' npm i nodemon -D ' command
+//we will install nodemon as a devDependicy by ' npm i nodemon -D ' or npm i nodemon --save-dev command
 //developing environment or testing or some other we need devDependicies.
 
 //lodash is a utility library, using just for this tutorial nothing much
